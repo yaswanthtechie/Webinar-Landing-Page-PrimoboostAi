@@ -5,7 +5,21 @@ module.exports = {
       "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          background: "var(--color-background)",
+          foreground: "var(--color-foreground)",
+          primary: "var(--color-primary)",
+          secondary: "var(--color-secondary)",
+          accent: "var(--color-accent)",
+          muted: "var(--color-muted)",
+          destructive: "var(--color-destructive)",
+        },
+        fontFamily: {
+          sans: ["var(--font-sans)"],
+          heading: ["var(--font-heading)"],
+        },
+      },
     },
     plugins: [],
   };
